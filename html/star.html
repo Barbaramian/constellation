@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>星座运势</title>
+
+    <link rel="stylesheet" href="../css/star.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="start-page">
+            <div class="cover"></div>
+            <div class="fill">
+                <span class="input">
+                    请输入你的星座
+                </span>
+                <div class="put">
+                    <label for="input">星座：</label>
+                    <input type="text" name="星座" placeholder="例如：巨蟹座 等">
+                </div>
+                <div class="submit">查询星座运势</div>
+
+            </div>
+        </div>
+        <div class="play-page">
+            <div class="header">
+                <div class="images">
+                    <div class="star1"></div>
+                    <div class="star2"></div>
+                    <div class="star3"></div>
+                    <div class="star4"></div>
+                    <div class="star5"></div>
+                    <div class="star6"></div>
+                    <div class="star7"></div>
+                    <div class="star8"></div>
+                    <div class="star9"></div>
+                    <div class="star10"></div>
+                    <div class="star11"></div>
+                    <div class="star12"></div>
+                </div>
+                <div class="name">
+                </div>
+                <div class="date">
+                </div>
+            </div>
+            <ul class="choose">
+                <li class="today active" time="today">本日运势</li>
+                <li class="week" time="week">本周运势</li>
+                <li class="month" time="month">本月运势</li>
+                <li class="year" time="year">本年运势</li>
+            </ul>
+            <div class="des">
+                <div class="loading">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                </div>
+                <div class="today active" time="today">
+                    <div class="index">
+                        <span class="total">综合指数</span>
+                        <div class="num"></div>
+                    </div>
+                    <div class="doc">
+                    </div>
+                    <div class="summery">
+                        <h3>今日概述</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="week" time="week">
+                </div>
+                <div class="month" time="month">
+                </div>
+                <div class="year" time="year">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/render.js"></script>
+</body>
+
+</html>

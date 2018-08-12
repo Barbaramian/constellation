@@ -1,0 +1,1010 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  list-style: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  font-family: YouYuan, 'Microsoft JhengHei', STXihei, '微软雅黑';
+  background: linear-gradient(to bottom, #0e1a2a, #0c194b, #252c50, #404868);
+}
+html body .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 媒体查询 移动端兼容 */
+}
+html body .wrapper .start-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+html body .wrapper .start-page .cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+  width: 70%;
+  padding-top: 70%;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.6;
+  animation: circle 100s linear infinite;
+}
+html body .wrapper .start-page .fill {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 2;
+  width: 40%;
+  height: 40%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.918);
+  text-align: center;
+}
+html body .wrapper .start-page .fill .input {
+  display: inline-block;
+  margin: 20px auto;
+  font-size: 35px;
+}
+html body .wrapper .start-page .fill .put {
+  margin: 20px auto;
+  width: 100%;
+  height: 40px;
+}
+html body .wrapper .start-page .fill .put label {
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: bottom;
+}
+html body .wrapper .start-page .fill .put input {
+  margin: 0px auto;
+  width: 40%;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #9dbde7;
+}
+html body .wrapper .start-page .fill .submit {
+  margin: 15px auto;
+  display: inline-block;
+  cursor: pointer;
+  width: 150px;
+  height: 34px;
+  vertical-align: bottom;
+  font-size: 16px;
+  line-height: 34px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 1px #ccc;
+}
+html body .wrapper .start-page .fill .submit:hover {
+  box-shadow: 0px 0px 5px 2px #ccc;
+}
+html body .wrapper .play-page {
+  overflow: hidden;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+html body .wrapper .play-page .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(12, 24, 65, 0.603);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+}
+html body .wrapper .play-page .header .images {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 100%;
+}
+html body .wrapper .play-page .header .images div {
+  opacity: 0.2;
+}
+html body .wrapper .play-page .header .images .star1 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 10%;
+  height: 50%;
+  background-image: url(../images/star1.png);
+  background-size: 100% 100%;
+  animation: star 3s linear infinite;
+}
+html body .wrapper .play-page .header .images .star2 {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 10%;
+  height: 40%;
+  background-image: url(../images/star2.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star3 {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  width: 10%;
+  height: 40%;
+  background-image: url(../images/star3.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star4 {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 15%;
+  height: 40%;
+  background-image: url(../images/star4.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star5 {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 15%;
+  height: 50%;
+  background-image: url(../images/star5.png);
+  background-size: 100% 100%;
+  transform: rotateZ(45deg);
+}
+html body .wrapper .play-page .header .images .star6 {
+  position: absolute;
+  top: 51%;
+  left: 40%;
+  width: 10%;
+  height: 40%;
+  background-image: url(../images/star6.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star7 {
+  position: absolute;
+  top: 4%;
+  left: 42%;
+  width: 10%;
+  height: 30%;
+  background-image: url(../images/star7.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star8 {
+  position: absolute;
+  top: 15%;
+  left: 65%;
+  width: 10%;
+  height: 40%;
+  background-image: url(../images/star8.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star9 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 15%;
+  height: 50%;
+  background-image: url(../images/star9.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star10 {
+  position: absolute;
+  top: 50%;
+  left: 68%;
+  width: 20%;
+  height: 50%;
+  background-image: url(../images/star10.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star11 {
+  position: absolute;
+  top: 45%;
+  left: 90%;
+  width: 15%;
+  height: 50%;
+  background-image: url(../images/star11.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .images .star12 {
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  width: 10%;
+  height: 40%;
+  background-image: url(../images/star12.png);
+  background-size: 100% 100%;
+}
+html body .wrapper .play-page .header .name {
+  width: 90%;
+  height: 70px;
+  background-color: #0a153bf8;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: rgba(255, 255, 255, 0.671);
+  font-size: 30px;
+  padding-left: 10%;
+  line-height: 70px;
+}
+html body .wrapper .play-page .header .date {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: rgba(255, 255, 255, 0.534);
+  font-size: 15px;
+  padding-top: 35px;
+  padding-left: 20%;
+  width: 150px;
+  height: 20px;
+}
+html body .wrapper .play-page .choose {
+  position: absolute;
+  top: 320px;
+  width: 100%;
+  height: 50px;
+  background-color: #0a153b;
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.233);
+}
+html body .wrapper .play-page .choose li {
+  cursor: pointer;
+  flex: 1;
+  font-size: 18px;
+  text-align: center;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.356);
+}
+html body .wrapper .play-page .choose li:hover {
+  color: rgba(255, 255, 255, 0.904);
+  background-color: #121c4d;
+}
+html body .wrapper .play-page .choose .active {
+  color: rgba(255, 255, 255, 0.904);
+  background-color: #121c4d;
+}
+html body .wrapper .play-page .des {
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 70%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.918);
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  overflow: scroll;
+}
+html body .wrapper .play-page .des .today {
+  display: none;
+  margin: 50px 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 80%;
+  height: 80%;
+}
+html body .wrapper .play-page .des .today .index {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(10, 21, 59, 0.781);
+  border-radius: 50%;
+}
+html body .wrapper .play-page .des .today .index .total {
+  margin-top: 40px;
+  margin-left: 50%;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+}
+html body .wrapper .play-page .des .today .index .num {
+  margin-top: 10px;
+  margin-left: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.589);
+}
+html body .wrapper .play-page .des .today .doc {
+  display: inline-block;
+  margin-top: -150px;
+  margin-left: 40%;
+  width: 60%;
+}
+html body .wrapper .play-page .des .today .doc h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+}
+html body .wrapper .play-page .des .today .doc span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+}
+html body .wrapper .play-page .des .today .summery {
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 95%;
+  height: 200px;
+}
+html body .wrapper .play-page .des .today .summery h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+}
+html body .wrapper .play-page .des .today .summery p {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #0e1a2a;
+  text-indent: 2em;
+  line-height: 25px;
+}
+html body .wrapper .play-page .des .week {
+  margin: 50px 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 80%;
+  height: 80%;
+  display: none;
+}
+html body .wrapper .play-page .des .week .index {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(10, 21, 59, 0.781);
+  border-radius: 50%;
+}
+html body .wrapper .play-page .des .week .index .total {
+  margin-top: 40px;
+  margin-left: 50%;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+}
+html body .wrapper .play-page .des .week .index .num {
+  margin-top: 10px;
+  margin-left: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.589);
+}
+html body .wrapper .play-page .des .week .doc {
+  display: inline-block;
+  margin-top: -150px;
+  margin-left: 40%;
+  width: 60%;
+}
+html body .wrapper .play-page .des .week .doc h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+}
+html body .wrapper .play-page .des .week .doc span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+}
+html body .wrapper .play-page .des .week .summery {
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 95%;
+  height: 200px;
+}
+html body .wrapper .play-page .des .week .summery h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+}
+html body .wrapper .play-page .des .week .summery p {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #0e1a2a;
+  text-indent: 2em;
+  line-height: 25px;
+}
+html body .wrapper .play-page .des .week h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+  margin: 10px auto;
+}
+html body .wrapper .play-page .des .week span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+  text-indent: 2em;
+}
+html body .wrapper .play-page .des .month {
+  margin: 50px 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 80%;
+  height: 80%;
+  display: none;
+}
+html body .wrapper .play-page .des .month .index {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(10, 21, 59, 0.781);
+  border-radius: 50%;
+}
+html body .wrapper .play-page .des .month .index .total {
+  margin-top: 40px;
+  margin-left: 50%;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+}
+html body .wrapper .play-page .des .month .index .num {
+  margin-top: 10px;
+  margin-left: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.589);
+}
+html body .wrapper .play-page .des .month .doc {
+  display: inline-block;
+  margin-top: -150px;
+  margin-left: 40%;
+  width: 60%;
+}
+html body .wrapper .play-page .des .month .doc h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+}
+html body .wrapper .play-page .des .month .doc span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+}
+html body .wrapper .play-page .des .month .summery {
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 95%;
+  height: 200px;
+}
+html body .wrapper .play-page .des .month .summery h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+}
+html body .wrapper .play-page .des .month .summery p {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #0e1a2a;
+  text-indent: 2em;
+  line-height: 25px;
+}
+html body .wrapper .play-page .des .month h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+  margin: 5px auto;
+}
+html body .wrapper .play-page .des .month span {
+  text-indent: 2em;
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+}
+html body .wrapper .play-page .des .year {
+  margin: 50px 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 80%;
+  height: 80%;
+  display: none;
+}
+html body .wrapper .play-page .des .year .index {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 160px;
+  height: 160px;
+  background-color: rgba(10, 21, 59, 0.781);
+  border-radius: 50%;
+}
+html body .wrapper .play-page .des .year .index .total {
+  margin-top: 40px;
+  margin-left: 50%;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.87);
+}
+html body .wrapper .play-page .des .year .index .num {
+  margin-top: 10px;
+  margin-left: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  transform: translate3d(-50%, 0, 0);
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.589);
+}
+html body .wrapper .play-page .des .year .doc {
+  display: inline-block;
+  margin-top: -150px;
+  margin-left: 40%;
+  width: 60%;
+}
+html body .wrapper .play-page .des .year .doc h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+}
+html body .wrapper .play-page .des .year .doc span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+}
+html body .wrapper .play-page .des .year .summery {
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  width: 95%;
+  height: 200px;
+}
+html body .wrapper .play-page .des .year .summery h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+}
+html body .wrapper .play-page .des .year .summery p {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  font-size: 18px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #0e1a2a;
+  text-indent: 2em;
+  line-height: 25px;
+}
+html body .wrapper .play-page .des .year .main {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+html body .wrapper .play-page .des .year .main h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+  width: 200px;
+  font-size: 30px;
+}
+html body .wrapper .play-page .des .year .main span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+}
+html body .wrapper .play-page .des .year .explain {
+  width: 100%;
+  display: inline-block;
+  margin: 10px auto;
+}
+html body .wrapper .play-page .des .year .explain span {
+  display: block;
+  color: #000;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+  text-indent: 2em;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+html body .wrapper .play-page .des .year .con {
+  width: 100%;
+  margin: 5px auto;
+  display: inline-block;
+}
+html body .wrapper .play-page .des .year .con h3 {
+  color: #000;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  width: 105px;
+  margin: 5px auto;
+}
+html body .wrapper .play-page .des .year .con span {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  padding-left: 5px;
+  border-left: 1px solid #0e1a2a;
+  text-indent: 2em;
+}
+html body .wrapper .play-page .des .active {
+  display: block;
+}
+@media (max-width: 800px) {
+  html body .wrapper .start-page .cover {
+    top: 25%;
+  }
+  html body .wrapper .start-page .fill {
+    top: 70%;
+    width: 95%;
+    border-radius: 8px;
+    height: 160px;
+    box-shadow: none;
+  }
+  html body .wrapper .start-page .fill .input {
+    font-size: 20px;
+    margin: 10px auto;
+  }
+  html body .wrapper .start-page .fill .put {
+    margin: 10px auto;
+  }
+  html body .wrapper .start-page .fill .put label {
+    font-size: 16px;
+  }
+  html body .wrapper .start-page .fill .put input {
+    height: 25px;
+    font-size: 14px;
+  }
+  html body .wrapper .start-page .fill .submit {
+    margin: 6px auto;
+  }
+  html body .wrapper .play-page {
+    overflow-y: hidden;
+  }
+  html body .wrapper .play-page .header {
+    height: 0px;
+  }
+  html body .wrapper .play-page .header .images {
+    display: none;
+  }
+  html body .wrapper .play-page .header .name {
+    background-image: url(../images/star1.png);
+    background-size: 65px 65px;
+    background-repeat: no-repeat;
+    background-position: 95% 100%;
+  }
+  html body .wrapper .play-page .header .date {
+    margin-left: 65px;
+  }
+  html body .wrapper .play-page .choose {
+    top: 70px;
+  }
+  html body .wrapper .play-page .des {
+    top: 145px;
+    width: 95%;
+    border-radius: 7px;
+    box-shadow: none;
+    height: 72%;
+  }
+  html body .wrapper .play-page .des .loading {
+    margin: 30% auto;
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    font-size: 10px;
+  }
+  html body .wrapper .play-page .des .loading div {
+    background-color: rgba(29, 69, 114, 0.664);
+    height: 100%;
+    width: 3px;
+    display: inline-block;
+    animation: stretchdelay 1.2s infinite ease-in-out;
+  }
+  html body .wrapper .play-page .des .loading .rect2 {
+    animation-delay: -1s;
+  }
+  html body .wrapper .play-page .des .loading .rect3 {
+    animation-delay: -0.8s;
+  }
+  html body .wrapper .play-page .des .loading .rect4 {
+    animation-delay: -0.6s;
+  }
+  @keyframes stretchdelay {
+    0%,
+    40%,
+    100% {
+      transform: scaleY(0.4);
+    }
+    20% {
+      transform: scaleY(1);
+    }
+  }
+  html body .wrapper .play-page .des .today {
+    margin: 20px 50%;
+    width: 95%;
+  }
+  html body .wrapper .play-page .des .today .index {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100px;
+    height: 100px;
+  }
+  html body .wrapper .play-page .des .today .index .total {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  html body .wrapper .play-page .des .today .index .num {
+    height: 50px;
+    margin-top: 6px;
+    font-size: 38px;
+  }
+  html body .wrapper .play-page .des .today .doc {
+    margin-top: -100px;
+  }
+  html body .wrapper .play-page .des .today .doc .con {
+    margin-left: -12px;
+  }
+  html body .wrapper .play-page .des .today .doc .con h3 {
+    color: #000;
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+    width: 105px;
+  }
+  html body .wrapper .play-page .des .today .doc .con span {
+    display: inline-block;
+  }
+  html body .wrapper .play-page .des .today .summery {
+    margin-top: 40px;
+    height: auto;
+  }
+  html body .wrapper .play-page .des .week {
+    margin: 20px 50%;
+    width: 95%;
+    height: auto;
+  }
+  html body .wrapper .play-page .des .week .index {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100px;
+    height: 100px;
+  }
+  html body .wrapper .play-page .des .week .index .total {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  html body .wrapper .play-page .des .week .index .num {
+    height: 50px;
+    margin-top: 6px;
+    font-size: 38px;
+  }
+  html body .wrapper .play-page .des .week .doc {
+    margin-top: -100px;
+  }
+  html body .wrapper .play-page .des .week .doc .con {
+    margin-left: -12px;
+  }
+  html body .wrapper .play-page .des .week .doc .con h3 {
+    color: #000;
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+    width: 105px;
+  }
+  html body .wrapper .play-page .des .week .doc .con span {
+    display: inline-block;
+  }
+  html body .wrapper .play-page .des .week .summery {
+    margin-top: 40px;
+    height: auto;
+  }
+  html body .wrapper .play-page .des .month {
+    margin: 20px 50%;
+    width: 95%;
+    height: auto;
+  }
+  html body .wrapper .play-page .des .month .index {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100px;
+    height: 100px;
+  }
+  html body .wrapper .play-page .des .month .index .total {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  html body .wrapper .play-page .des .month .index .num {
+    height: 50px;
+    margin-top: 6px;
+    font-size: 38px;
+  }
+  html body .wrapper .play-page .des .month .doc {
+    margin-top: -100px;
+  }
+  html body .wrapper .play-page .des .month .doc .con {
+    margin-left: -12px;
+  }
+  html body .wrapper .play-page .des .month .doc .con h3 {
+    color: #000;
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+    width: 105px;
+  }
+  html body .wrapper .play-page .des .month .doc .con span {
+    display: inline-block;
+  }
+  html body .wrapper .play-page .des .month .summery {
+    margin-top: 40px;
+    height: auto;
+  }
+  html body .wrapper .play-page .des .year {
+    margin: 20px 50%;
+    width: 95%;
+    height: auto;
+  }
+  html body .wrapper .play-page .des .year .index {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 100px;
+    height: 100px;
+  }
+  html body .wrapper .play-page .des .year .index .total {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  html body .wrapper .play-page .des .year .index .num {
+    height: 50px;
+    margin-top: 6px;
+    font-size: 38px;
+  }
+  html body .wrapper .play-page .des .year .doc {
+    margin-top: -100px;
+  }
+  html body .wrapper .play-page .des .year .doc .con {
+    margin-left: -12px;
+  }
+  html body .wrapper .play-page .des .year .doc .con h3 {
+    color: #000;
+    font-size: 20px;
+    padding: 5px;
+    display: inline-block;
+    width: 105px;
+  }
+  html body .wrapper .play-page .des .year .doc .con span {
+    display: inline-block;
+  }
+  html body .wrapper .play-page .des .year .summery {
+    margin-top: 40px;
+    height: auto;
+  }
+  html body .wrapper .play-page .des .year .main {
+    height: auto;
+  }
+  html body .wrapper .play-page .des .year .main span {
+    display: block;
+    color: #000;
+    padding-left: 5px;
+    border-left: 1px solid #0e1a2a;
+    font-size: 16px;
+  }
+}
+@keyframes circle {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotateZ(0deg);
+  }
+  50% {
+    transform: translate3d(-50%, -50%, 0) rotateZ(180deg);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotateZ(360deg);
+  }
+}
+@keyframes star {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
